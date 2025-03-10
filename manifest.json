@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Dense GitHub Projects",
+  "version": "1.0",
+  "description": "Modifies GitHub project boards to display cards in two columns",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://github.com/*"],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "GitHub Kanban Two-Column"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
