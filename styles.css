@@ -1,0 +1,11 @@
+.board-view-column-card {
+  margin-bottom: 0 !important;
+  max-width: calc(50% - 0.25rem) !important;
+  display: inline-block !important;
+}
+
+.column-drop-zone {
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  display: flex !important;
+}
